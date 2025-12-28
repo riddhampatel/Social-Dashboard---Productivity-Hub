@@ -63,3 +63,8 @@ frontend/.vite/
 # Storybook/Playwright (future)
 .storybook-out/
 playwright-report/
+
+
+
+install.ps1
+start.ps1
