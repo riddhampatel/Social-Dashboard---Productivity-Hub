@@ -1,0 +1,65 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Node
+node_modules/
+
+# Build outputs
+backend/dist/
+backend/build/
+frontend/dist/
+frontend/build/
+
+# Coverage
+coverage/
+backend/coverage/
+frontend/coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+$RECYCLE.BIN/
+
+# Misc
+*.pid
+*.seed
+*.orig
+*.rej
+
+# Cache
+.npm
+npm-cache/
+pnpm-store/
+.pnp/
+.pnp.js
+.cache/
+.next/
+.sass-cache/
+.parcel-cache/
+
+# Logs/Uploads (backend)
+backend/uploads/
+backend/logs/
+
+# Vite
+frontend/.vite/
+
+# Storybook/Playwright (future)
+.storybook-out/
+playwright-report/
