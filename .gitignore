@@ -64,7 +64,8 @@ frontend/.vite/
 .storybook-out/
 playwright-report/
 
-
-
+# PowerShell scripts
 install.ps1
 start.ps1
+
+
