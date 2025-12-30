@@ -114,7 +114,7 @@ const Sidebar = () => {
           <div className="flex items-center space-x-3 px-4 py-3 mb-2">
             {user?.avatar ? (
               <img
-                src={`http://localhost:5000${user.avatar}`}
+                src={`http://localhost:5001${user.avatar}`}
                 alt={user.name}
                 className="w-10 h-10 rounded-full object-cover"
               />

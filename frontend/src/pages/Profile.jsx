@@ -31,7 +31,7 @@ const Profile = () => {
         email: user.email || "",
       });
       if (user.avatar) {
-        setAvatarPreview(`http://localhost:5000${user.avatar}`);
+        setAvatarPreview(`http://localhost:5001${user.avatar}`);
       }
     }
   }, [user]);
