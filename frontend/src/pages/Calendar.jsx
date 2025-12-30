@@ -34,6 +34,8 @@ const Calendar = () => {
     try {
       const response = await eventsAPI.getAll();
       if (response.success) {
+        console.log('Loaded events:', response.events);
+        console.log('Today:', new Date().toISOString());
         setEvents(response.events);
       }
     } catch (error) {
@@ -122,6 +124,8 @@ const Calendar = () => {
     ...event,
     start: new Date(event.startDate),
     end: new Date(event.endDate),
+    title: event.title,
+    id: event._id,
   }));
 
   return (

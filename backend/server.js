@@ -90,6 +90,24 @@ app.use("/api/bookmarks", require("./routes/bookmarks"));
 app.use("/api/events", require("./routes/events"));
 app.use("/api/widgets", require("./routes/widgets"));
 
+// Root route
+app.get("/", (req, res) => {
+  res.json({ 
+    status: "ok", 
+    message: "Social Dashboard API Server",
+    version: "1.0.0",
+    endpoints: {
+      auth: "/api/auth",
+      tasks: "/api/tasks",
+      notes: "/api/notes",
+      bookmarks: "/api/bookmarks",
+      events: "/api/events",
+      widgets: "/api/widgets",
+      health: "/api/health"
+    }
+  });
+});
+
 // Health check route
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", message: "Server is running" });
